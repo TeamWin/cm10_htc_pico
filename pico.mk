@@ -19,6 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/pico/overlay
 
+# Kernel
+PRODUCT_COPY_FILES += \
+    device/htc/pico/prebuilt/kernel:kernel
+
 # Video decoding
 PRODUCT_PACKAGES += \
     libmm-omxcore \
